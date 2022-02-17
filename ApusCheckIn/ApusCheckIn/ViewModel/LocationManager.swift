@@ -52,16 +52,13 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     private var userLongitude: Double { lastLocation?.coordinate.longitude ?? 0 }
     
-    let processLocation = ProcessLocation()
+    private let processLocation = ProcessLocation()
     
     var myDistanceFromCluster: Double {
-        processLocation.haversineDistance(
-                              la1: 37.48815449911871,
-                              lo1: 127.06476621423361, // coordinate of Gaepo Custer
-                              la2: userLatitude,
-                              lo2: userLongitude)
+        processLocation.getDistanceFromCluster(lat: userLatitude, lon: userLongitude)
     }
+    
     var isNear: Bool {
-        processLocation.isNear(myDistance: myDistanceFromCluster)
+        processLocation.isNear(lat: userLatitude, lon: userLongitude)
     }
 }
