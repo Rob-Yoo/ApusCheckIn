@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct FrontView: View {
-    @ObservedObject var locationManager = LocationManager()
+    @ObservedObject var locationManager: LocationManager
     let intraId: String = "hakim"
     /* DB의 idfv와 기기의 idfv를 비교해 받아올 예정
      let uuid = UIDevice.current.identifierForVendor!.uuidString */
@@ -19,7 +19,7 @@ struct FrontView: View {
                 .font(.largeTitle)
                 .fontWeight(.thin)
             Spacer()
-            EntranceButton(isInLocation: locationManager.isNear()).padding(.bottom)
+            EntranceButton(isInLocation: locationManager.isNear).padding(.bottom)
             Spacer()
             Text("Intra ID: \(intraId)")
                 .font(.title2).fontWeight(.ultraLight)
@@ -45,10 +45,13 @@ struct EntranceButton: View {
         }
         .frame(width: self.buttonWidth(),
                height: self.buttonHeight())
+        .disabled(!isInLocation)
     }
+    
     private func buttonWidth() -> CGFloat {
         return (UIScreen.main.bounds.width - 5 * 12) / 1.2
     }
+    
     private func buttonHeight() -> CGFloat {
         return (UIScreen.main.bounds.width - 5 * 12) / 1.2
     }
@@ -56,6 +59,7 @@ struct EntranceButton: View {
 
 struct FrontView_Previews: PreviewProvider {
     static var previews: some View {
-        FrontView()
+        let checkin = LocationManager()
+        FrontView(locationManager: checkin)
     }
 }

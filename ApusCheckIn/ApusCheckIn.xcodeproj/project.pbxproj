@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		825879ED27BE12F6008912B2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825879EC27BE12F6008912B2 /* LocationManager.swift */; };
-		825879F827BE305E008912B2 /* HaversineFormular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825879F727BE305E008912B2 /* HaversineFormular.swift */; };
+		8296B05827BE5DEF007CF4AC /* ProcessLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8296B05727BE5DEF007CF4AC /* ProcessLocation.swift */; };
 		82DC443327BE0756007D8684 /* ApusCheckInApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DC443227BE0756007D8684 /* ApusCheckInApp.swift */; };
 		82DC443727BE0757007D8684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DC443627BE0757007D8684 /* Assets.xcassets */; };
 		82DC443A27BE0757007D8684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DC443927BE0757007D8684 /* Preview Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		825879EC27BE12F6008912B2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		825879F427BE2024008912B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		825879F727BE305E008912B2 /* HaversineFormular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HaversineFormular.swift; sourceTree = "<group>"; };
+		8296B05727BE5DEF007CF4AC /* ProcessLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessLocation.swift; sourceTree = "<group>"; };
 		82DC442F27BE0756007D8684 /* ApusCheckIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApusCheckIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DC443227BE0756007D8684 /* ApusCheckInApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApusCheckInApp.swift; sourceTree = "<group>"; };
 		82DC443627BE0757007D8684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +56,7 @@
 		825879EB27BE12EC008912B2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				825879F727BE305E008912B2 /* HaversineFormular.swift */,
+				8296B05727BE5DEF007CF4AC /* ProcessLocation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -169,8 +169,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8296B05827BE5DEF007CF4AC /* ProcessLocation.swift in Sources */,
 				82DC443327BE0756007D8684 /* ApusCheckInApp.swift in Sources */,
-				825879F827BE305E008912B2 /* HaversineFormular.swift in Sources */,
 				825879ED27BE12F6008912B2 /* LocationManager.swift in Sources */,
 				82DC444127BE0905007D8684 /* FrontView.swift in Sources */,
 			);

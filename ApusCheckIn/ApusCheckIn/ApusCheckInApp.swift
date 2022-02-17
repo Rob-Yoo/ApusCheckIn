@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct ApusCheckInApp: App {
+    let checkin = LocationManager()
     var body: some Scene {
         WindowGroup {
-            FrontView()
+            FrontView(locationManager: checkin)
         }
     }
 }
