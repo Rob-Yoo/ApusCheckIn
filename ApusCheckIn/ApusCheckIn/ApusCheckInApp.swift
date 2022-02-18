@@ -10,9 +10,13 @@ import SwiftUI
 @main
 struct ApusCheckInApp: App {
     let checkin = LocationManager()
+    let uuidManager = UUIDManager(uuid: UIDevice.current.identifierForVendor!.uuidString)
     var body: some Scene {
         WindowGroup {
-            FrontView(locationManager: checkin)
+            FrontView(
+                locationManager: checkin,
+                uuidManager: uuidManager
+            )
         }
     }
 }

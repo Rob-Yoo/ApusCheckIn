@@ -13,6 +13,9 @@
 		82DC443727BE0757007D8684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DC443627BE0757007D8684 /* Assets.xcassets */; };
 		82DC443A27BE0757007D8684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82DC443927BE0757007D8684 /* Preview Assets.xcassets */; };
 		82DC444127BE0905007D8684 /* FrontView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DC444027BE0905007D8684 /* FrontView.swift */; };
+		9B078ABE27BF7A080098CA25 /* ProcessUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B078ABD27BF7A080098CA25 /* ProcessUUID.swift */; };
+		9B078AC027BF7A100098CA25 /* tmpDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B078ABF27BF7A100098CA25 /* tmpDB.swift */; };
+		9B078AC227BF7A1E0098CA25 /* UUIDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B078AC127BF7A1E0098CA25 /* UUIDManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		82DC443627BE0757007D8684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82DC443927BE0757007D8684 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82DC444027BE0905007D8684 /* FrontView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontView.swift; sourceTree = "<group>"; };
+		9B078ABD27BF7A080098CA25 /* ProcessUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessUUID.swift; sourceTree = "<group>"; };
+		9B078ABF27BF7A100098CA25 /* tmpDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tmpDB.swift; sourceTree = "<group>"; };
+		9B078AC127BF7A1E0098CA25 /* UUIDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UUIDManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				825879EC27BE12F6008912B2 /* LocationManager.swift */,
+				9B078AC127BF7A1E0098CA25 /* UUIDManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -57,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				8296B05727BE5DEF007CF4AC /* ProcessLocation.swift */,
+				9B078ABD27BF7A080098CA25 /* ProcessUUID.swift */,
+				9B078ABF27BF7A100098CA25 /* tmpDB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,9 +91,9 @@
 			children = (
 				825879F427BE2024008912B2 /* Info.plist */,
 				825879EB27BE12EC008912B2 /* Model */,
+				825879E927BE12D4008912B2 /* View */,
 				825879EA27BE12DE008912B2 /* ViewModel */,
 				82DC443227BE0756007D8684 /* ApusCheckInApp.swift */,
-				825879E927BE12D4008912B2 /* View */,
 				82DC443627BE0757007D8684 /* Assets.xcassets */,
 				82DC443827BE0757007D8684 /* Preview Content */,
 			);
@@ -171,8 +180,11 @@
 			files = (
 				8296B05827BE5DEF007CF4AC /* ProcessLocation.swift in Sources */,
 				82DC443327BE0756007D8684 /* ApusCheckInApp.swift in Sources */,
+				9B078AC227BF7A1E0098CA25 /* UUIDManager.swift in Sources */,
 				825879ED27BE12F6008912B2 /* LocationManager.swift in Sources */,
+				9B078ABE27BF7A080098CA25 /* ProcessUUID.swift in Sources */,
 				82DC444127BE0905007D8684 /* FrontView.swift in Sources */,
+				9B078AC027BF7A100098CA25 /* tmpDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,8 @@ import SwiftUI
 
 struct FrontView: View {
     @ObservedObject var locationManager: LocationManager
-    let intraId: String = "hakim"
-    /* DB의 idfv와 기기의 idfv를 비교해 받아올 예정
-     let uuid = UIDevice.current.identifierForVendor!.uuidString */
+    var uuidManager: UUIDManager
+//     DB의 idfv와 기기의 idfv를 비교해 받아올 예정
     
     var body: some View {
         VStack {
@@ -21,7 +20,7 @@ struct FrontView: View {
             Spacer()
             EntranceButton(isInLocation: locationManager.isNear).padding(.bottom)
             Spacer()
-            Text("Intra ID: \(intraId)")
+            Text("IntraID: \(uuidManager.intraID)")
                 .font(.title2).fontWeight(.ultraLight)
             Text("My distance from Cluster: \(Int(locationManager.myDistanceFromCluster)) meter")
                 .font(.title2).fontWeight(.ultraLight)
@@ -60,6 +59,11 @@ struct EntranceButton: View {
 struct FrontView_Previews: PreviewProvider {
     static var previews: some View {
         let checkin = LocationManager()
-        FrontView(locationManager: checkin)
+        let uuidManager = UUIDManager(uuid: UIDevice.current.identifierForVendor!.uuidString)
+        FrontView(
+            locationManager: checkin,
+            uuidManager: uuidManager
+        )
+        
     }
 }
